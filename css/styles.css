@@ -1,0 +1,273 @@
+body{
+  font-family: 'Merriweather',serif;
+  margin: 0;
+}
+.container{
+  background-color: black;
+ /* height: 100%;*/
+ /*width: 1350px;*/
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+/*  background-color: brown;*/
+  flex-wrap: wrap; 
+  position: sticky;
+  top: 0;
+ /* z-index: 100;*/
+}
+
+  
+
+.link{
+ width: 120px;
+ text-align: center;
+ padding: 10px;
+ -webkit-animation:fadeIn 2s;
+ /*flex-wrap: wrap;*/
+}
+a{  
+  text-decoration: none;
+  color: goldenrod;
+  font-size: 20px;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+a:hover{
+  color: white;
+  font-size: 25px;
+  
+}
+.home-container{
+  /*width: 1350px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 100vh;
+  background-color: black; 
+  
+/*  flex-wrap: wrap; */
+}
+.img1{
+/*  position: absolute;
+  right: 170px;
+  top: 200px; */  
+  order: 1;
+  transition: 0.5s;
+}
+.heading1{
+  color: wheat;  
+/*  position: absolute;
+  top: 200px;
+  left: 50px;*/
+  text-align: center;
+/*margin-left: 10%;*/
+  text-shadow: 0 0 15px #d9ff00;
+  font-family: 'Sacramento', cursive;
+  -webkit-animation:fadeIn 2s;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.heading1:hover{
+  cursor: pointer;
+  font-size: 25px;
+  
+}
+.img1:hover{
+  transform: scale(0.5);
+  cursor: pointer;
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.About-me{
+  background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   /* z-index: -1; */
+   
+}
+
+.know{
+    margin-top: 100px;
+    text-align: center;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+} 
+.know:hover{
+  font-size: 20px;
+  cursor: cell;
+}
+
+h1{
+  text-align: center;  
+}
+.intro{
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+.para{
+  width: 90%;
+  line-height: 2;
+  font-family: 'Merriweather',serif;
+}
+.skill_1{
+  width: 500px;
+  border-radius: 100px;
+  float: left;
+  margin-right: 3%; 
+  opacity: 0.5;
+  transition: 0.5s;
+  margin-bottom:8%;
+  
+}
+.skill_1:hover{
+  opacity: 1;
+  cursor: pointer;
+  
+}
+.Experience{
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+  background-color: burlywood;
+  flex-wrap: wrap;
+}
+.work-experience{
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2px;
+  flex-basis: 100vh;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+li{
+ /* width: 70%;*/
+  line-height: 1;
+  font-family: 'Merriweather',serif;
+  list-style: none;
+}
+.wipro{
+  color: seagreen;
+}
+.third{
+  background-color: burlywood;
+  
+}
+.heading{
+  color: seagreen;
+  margin-top: 50px;
+  transition: 0.25s;
+}
+.heading:hover{
+  font-size: 55px;
+  color: wheat;
+  cursor: cell;
+}
+.top{
+  display: inline-flex;
+  background-color: black;
+  display: none;
+}
+
+
+
+@media(max-width: 1400px){
+  
+  .upper_body{
+  /* background-color: black;
+    display: flex;
+    height: 100%;
+    gap: 8rem;
+  /*top: 0;*/
+    background-color: black;
+  }
+  .heading1:hover{
+    cursor: pointer;
+    font-size: 20px;
+    
+  }
+  .know{
+    margin-top: 8%;
+  }
+  .container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+   
+    
+  }
+  .home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    
+    
+  /*  height: 100%;*/
+  }
+  .img1{
+    order: 0;
+  }
+ .About-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  
+ }
+ 
+/*.third{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}*/
+
+ .skill_1{
+  float: none;
+  width: 60%;
+ }
+
+ .para{
+  width: 90%;
+  line-height: 2;
+}
+.intro{
+  margin-left: 30%;
+  
+}
+.top{
+  display: inline-flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: gray;
+  justify-content: right;
+  margin-left: 86%;
+  font-weight: bolder;
+  padding: 6px;
+  background-color: black;
+  border-radius: 100px;
+  opacity: 0.3;
+}
+.top:hover{
+  color: goldenrod;
+  font-size: 22px;
+}
+
+}
